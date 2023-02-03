@@ -4,6 +4,8 @@
 
 This project creates a simple demand forecast model using Portland General Electric's demand data (from the Energy Information Administration's website).  
 
+The forecasting model is created using multivariate polynomial regression and residual analysis. 
+
 Analysis is done in a Jupyter Notebook using Python, pandas, NumPy, scikit-learn, and matplotlib. 
 
 
@@ -32,7 +34,7 @@ API ROUTE:
 Frequency: 
 - Hourly
 - Start: January 1, 2021 
-- End: December 21, 2021  
+- End: December 31, 2021  
 
 Filtered by:
 - Balancing Authority / Region: (PGE) Portland General Electric Company
