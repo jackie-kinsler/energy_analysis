@@ -53,8 +53,8 @@ API ROUTE:
 
 Frequency: 
 - Hourly
-- Start: January 1, 2021 
-- End: December 31, 2021  
+- Start: January 1, 2022
+- End: December 31, 2022  
 
 Filtered by:
 - Balancing Authority / Region: (PGE) Portland General Electric Company
