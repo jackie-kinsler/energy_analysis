@@ -1,12 +1,32 @@
-## Energy Demand Forecasting Model 
-#### Predictors: Temperature, Hour of Day 
+## [Energy Demand Forecasting Model](https://github.com/jackie-kinsler/energy_analysis/blob/master/energy_analysis.ipynb)
+#### Predictors: Temperature, time of day, day of week
 #### Responses: Energy Demand
 
 This project creates a simple demand forecast model using Portland General Electric's demand data (from the Energy Information Administration's website).  
 
-The forecasting model is created using multivariate polynomial regression and residual analysis. 
+The forecasting model is created using time series decomposition and simple regressions. 
 
 Analysis is done in a Jupyter Notebook using Python, pandas, NumPy, scikit-learn, and matplotlib. 
+
+Forecasting energy demand can be fairly accurate because: 
+1. There is a good understanding of factors related to demand (temperature, seasonality, etc.)
+2. There is a lot of data available. On EIA, there is 8 years of hourly PGE data. 
+3. It is likely that future behavior will be similar to past behavior. 
+4. Forecasts aren't too dependent on customer behavior, trends will likely remain similar through price increases and price fluctuation of other fuel sources. 
+
+### Steps in Forecasting
+1. Problem definition 
+- Create a model to predict hourly energy demand 
+2. Gathering information 
+- Gather data from the EIA as well as historic weather data
+- Gather information from the EIA about how  the data is collected, definitions, etc. 
+3. Preliminary analysis 
+- Start with basic graphs. View the time plots of the weather and demand data. Find any trends or patterns. Identify if seasonality is important. 
+- Are there any outliers or unexpected trends? 
+4. Choosing and fitting models 
+- Try various fits. For example, regressions, ARIMA, residual study, etc 
+5. Using and evaluating a forecasting model 
+- Try out the forecasting model. Test it on data that was NOT used to generate the model. How can we quantify how accurate the model is? 
 
 
 ### Using EIA for energy data 
@@ -22,7 +42,7 @@ This will later be sourced by the notebook.
 
 ### Creating GET requests for EIA data 
 
-EIA has a helpful [API browser](https://www.eia.gov/opendata/browser/) with a GET request formulater. 
+EIA has a helpful [API browser](https://www.eia.gov/opendata/browser/) with a GET request formulator. 
 
 For this project, the following is used:
 
@@ -50,7 +70,7 @@ It becomes:
 
 ## Definitions from Hourly Electric Grid Monitor (EIA-930 data)
 "Form EIA-930 data collection provides a centralized and comprehensive source for hourly operating data about the high-voltage bulk electric power grid in the Lower 48 states."
-You can read more Form DIA-930 data collecton [here](https://www.eia.gov/electricity/gridmonitor/about). 
+You can read more Form DIA-930 data collection [here](https://www.eia.gov/electricity/gridmonitor/about). 
 
 
 "Balancing Authorities (BAs)... are mainly responsible for balancing electricity supply, demand, and interchange on their electric systems in real time."
