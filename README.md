@@ -28,6 +28,11 @@ Forecasting energy demand can be fairly accurate because:
 5. Using and evaluating a forecasting model 
 - Try out the forecasting model. Test it on data that was NOT used to generate the model. How can we quantify how accurate the model is? 
 
+### Time Series Forecasting in Python 
+Some methods for time series forecasting are not natively available in Python libraries. So, I will import modules written by [Michael Richman](https://github.com/zgana).
+
+The import files with Michael Richman's code are `utils.py` and `simpletsmodel.py`.  
+^Much of this code is from [this project](https://github.com/zgana/fpp3-python-readalong) which attempts to recreate examples from Forecasting: Principles and Practice (Hyndman and Athanasopoulos) in Python (rather than R). 
 
 ### Using EIA for energy data 
 To use EIA for energy data, first, generate an API key using this link: 
