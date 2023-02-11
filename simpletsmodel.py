@@ -1,4 +1,8 @@
+import numpy as np 
+import pandas as pd
+
 # written by [Michael Richman](https://github.com/zgana)
+
 
 class SimpleTSModel:
     """Simple TS model base class."""
@@ -116,3 +120,4 @@ class TSDrift(SimpleTSModel):
         out.iloc[0] = np.nan
         out = out.loc[start:].copy()
         return out.copy()
+

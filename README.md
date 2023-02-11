@@ -1,6 +1,6 @@
 ## [Energy Demand Forecasting Model](https://github.com/jackie-kinsler/energy_analysis/blob/master/energy_analysis.ipynb)
 #### Predictors: Temperature, time of day, day of week
-#### Responses: Energy Demand
+#### Forecast: Energy Demand
 
 This project creates a simple demand forecast model using Portland General Electric's demand data (from the Energy Information Administration's website).  
 

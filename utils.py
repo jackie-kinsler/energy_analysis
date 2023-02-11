@@ -19,12 +19,12 @@ import pmdarima as pmd
 # from tqdm import tqdm
 
 
-plt.rc('axes', titlesize='medium')
-plt.rc('axes', titlelocation='left')
-plt.rc('axes.spines', right=False)
-plt.rc('axes.spines', top=False)
-sizets = (8,4.5)
-plt.rc('figure', figsize=sizets)
+# plt.rc('axes', titlesize='medium')
+# plt.rc('axes', titlelocation='left')
+# plt.rc('axes.spines', right=False)
+# plt.rc('axes.spines', top=False)
+# sizets = (8,4.5)
+# plt.rc('figure', figsize=sizets)
 
 
 def summarize(gb, f):
