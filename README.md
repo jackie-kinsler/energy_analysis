@@ -1,4 +1,4 @@
-## [Energy Demand Forecasting Model](https://github.com/jackie-kinsler/energy_analysis/blob/master/energy_analysis.ipynb)
+## [Energy Demand Forecasting Model](https://nbviewer.org/github/jackie-kinsler/energy_analysis/blob/master/energy_analysis.ipynb#gathering_data)
 #### Predictors: Temperature, time of day, day of week
 #### Forecast: Energy Demand
 
