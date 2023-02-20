@@ -6,6 +6,10 @@ This project creates a simple demand forecast model using Portland General Elect
 
 The forecasting model is created using time series decomposition and simple regressions. 
 
+Results preview: 
+
+<img src="forecast.png" alt="comparison of observed demand, seasonal naive forecast, seasonal and trend forecast, and PGE's forecast" title="Forecast comparison">
+
 Analysis is done in a Jupyter Notebook using Python, pandas, NumPy, scikit-learn, and matplotlib. 
 
 Forecasting energy demand can be fairly accurate because: 
